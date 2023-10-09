@@ -1,0 +1,2 @@
+date,LogTitle,message,exception,machinename,appdomain,assembly-version,basedir,callsite,counter,nlogdir,processid,processname,specialfolder,stacktrace,longdate,event-properties,uppercase,logger,url,action
+2023/08/25 15:58:59.726,接口启动,接口启动成功,,H4RN8AOYJV9V2K8,0001:CoreCms.Net.Web.Admin, 1.0.0.0,D:\APP\Admin\App\,CoreCms.Net.Loging.NLogUtil.WriteFileLog,1,D:\APP\Admin\App,11108,dotnet,C:\Users\yao-lifeng_160781446\Desktop,Program.<Main>$ => NLogUtil.WriteAll => NLogUtil.WriteFileLog,2023-08-25 15:58:59.7261,,TRACE,logfile,,

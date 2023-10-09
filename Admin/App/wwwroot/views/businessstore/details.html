@@ -1,0 +1,100 @@
+<script type="text/html" template  lay-done="layui.data.done(d);">
+    <table class="layui-table layui-form" lay-filter="LAY-app-BusinessStore-detailsForm" id="LAY-app-BusinessStore-detailsForm">
+        <colgroup>
+            <col width="100">
+            <col>
+            <col width="100">
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="name">商家名称</label>
+                </td>
+                <td>
+                    {{ d.params.data.name || '' }}
+                </td>
+                <td>
+                    <label for="phone">联系人</label>
+                </td>
+                <td>
+                    {{ d.params.data.contacts || '' }}
+                </td>
+            </tr>
+		    
+		    <tr>
+                <td>
+                    <label for="phone">联系电话</label>
+                </td>
+                <td>
+                    {{ d.params.data.phone || '' }}
+                </td>
+                <td>
+                    <label for="province">省</label>
+                </td>
+                <td>
+                    {{ d.params.data.province || '' }}
+                </td>
+            </tr>
+		    
+		    <tr>
+                <td>
+                    <label for="city">地级市</label>
+                </td>
+                <td>
+                    {{ d.params.data.city || '' }}
+                </td>
+                <td>
+                    <label for="county">区县</label>
+                </td>
+                <td>
+                    {{ d.params.data.county || '' }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="platformName">经营平台</label>
+                </td>
+                <td>
+                    {{ d.params.data.platformName || '' }}
+                </td>
+                <td>
+                    <label for="thermosphere">温层种类</label>
+                </td>
+                <td>
+                    {{ d.params.data.thermosphere || '' }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="productCategory">经营类目</label>
+                </td>
+                <td>
+                    {{ d.params.data.productCategory || '' }}
+                </td>
+                <td>
+                    <label for="createTime">创建时间</label>
+                </td>
+                <td>
+                    {{ d.params.data.createTime || '' }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+<script>
+    var debug= layui.setter.debug;
+    layui.data.done = function (d) {
+        //开启调试情况下获取接口赋值数据
+        if (debug) { console.log(d.params.data); }
+
+        layui.use(['admin', 'form', 'coreHelper'], function () {
+            var $ = layui.$
+                , setter = layui.setter
+                , admin = layui.admin
+                , coreHelper = layui.coreHelper
+                , form = layui.form;
+            form.render(null, 'LAY-app-BusinessStore-detailsForm');
+        });
+    };
+</script>

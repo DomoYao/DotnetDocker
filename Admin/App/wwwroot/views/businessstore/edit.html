@@ -1,0 +1,192 @@
+<script type="text/html" template lay-done="layui.data.sendParams(d);">
+    <div class="layui-form coreshop-form layui-form-pane" lay-filter="LAY-app-BusinessStore-editForm" id="LAY-app-BusinessStore-editForm">
+	    <input type="hidden" name="id"  value="{{d.params.data.id || '' }}" />
+	    <div class="layui-form-item">
+            <label for="id" class="layui-form-label  layui-form-required">菜单id</label>
+            <div class="layui-input-block">
+                <input  type="number" min="0" max="999999" name="id"   lay-verType="tips" lay-verify="required|number" class="layui-input" value="{{d.params.data.id || '' }}" placeholder="请输入菜单id" lay-reqText="请输入菜单id并为数字"  />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="name" class="layui-form-label  layui-form-required">仓库名称</label>
+            <div class="layui-input-block">
+                <input name="name"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入仓库名称" lay-reqText="请输入仓库名称"  value="{{d.params.data.name || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="phone" class="layui-form-label  layui-form-required">联系电话</label>
+            <div class="layui-input-block">
+                <input name="phone"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入联系电话" lay-reqText="请输入联系电话"  value="{{d.params.data.phone || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="weixinId" class="layui-form-label  layui-form-required">微信号</label>
+            <div class="layui-input-block">
+                <input name="weixinId"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入微信号" lay-reqText="请输入微信号"  value="{{d.params.data.weixinId || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="region" class="layui-form-label  layui-form-required">经营大区</label>
+            <div class="layui-input-block">
+                <input name="region"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入经营大区" lay-reqText="请输入经营大区"  value="{{d.params.data.region || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="province" class="layui-form-label  layui-form-required">省</label>
+            <div class="layui-input-block">
+                <input name="province"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入省" lay-reqText="请输入省"  value="{{d.params.data.province || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="city" class="layui-form-label  layui-form-required">地级市</label>
+            <div class="layui-input-block">
+                <input name="city"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入地级市" lay-reqText="请输入地级市"  value="{{d.params.data.city || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="county" class="layui-form-label  layui-form-required">区县</label>
+            <div class="layui-input-block">
+                <input name="county"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入区县" lay-reqText="请输入区县"  value="{{d.params.data.county || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="address" class="layui-form-label  layui-form-required">详细地址</label>
+            <div class="layui-input-block">
+                <input name="address"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入详细地址" lay-reqText="请输入详细地址"  value="{{d.params.data.address || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="latitude" class="layui-form-label  layui-form-required">经度</label>
+            <div class="layui-input-block">
+                <input name="latitude"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入经度" lay-reqText="请输入经度"  value="{{d.params.data.latitude || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="longitude" class="layui-form-label  layui-form-required">纬度</label>
+            <div class="layui-input-block">
+                <input name="longitude"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入纬度" lay-reqText="请输入纬度"  value="{{d.params.data.longitude || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="openTime" class="layui-form-label  layui-form-required">开仓时间</label>
+            <div class="layui-input-block">
+                <input name="openTime"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入开仓时间" lay-reqText="请输入开仓时间"  value="{{d.params.data.openTime || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="doorPhoto" class="layui-form-label  layui-form-required">门头照片</label>
+            <div class="layui-input-block">
+                <input name="doorPhoto"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入门头照片" lay-reqText="请输入门头照片"  value="{{d.params.data.doorPhoto || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="area" class="layui-form-label  layui-form-required">面积</label>
+            <div class="layui-input-block">
+                <input name="area"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入面积" lay-reqText="请输入面积"  value="{{d.params.data.area || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="type" class="layui-form-label  layui-form-required">仓库种类</label>
+            <div class="layui-input-block">
+                <input name="type"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入仓库种类" lay-reqText="请输入仓库种类"  value="{{d.params.data.type || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="thermosphere" class="layui-form-label  layui-form-required">温层种类</label>
+            <div class="layui-input-block">
+                <input name="thermosphere"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入温层种类" lay-reqText="请输入温层种类"  value="{{d.params.data.thermosphere || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="platformName" class="layui-form-label  layui-form-required">可服务平台名称</label>
+            <div class="layui-input-block">
+                <input name="platformName"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入可服务平台名称" lay-reqText="请输入可服务平台名称"  value="{{d.params.data.platformName || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="productCategory" class="layui-form-label  layui-form-required">商品类目</label>
+            <div class="layui-input-block">
+                <input name="productCategory"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入商品类目" lay-reqText="请输入商品类目"  value="{{d.params.data.productCategory || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="licensePhoe" class="layui-form-label  layui-form-required">营业执照</label>
+            <div class="layui-input-block">
+                <input name="licensePhoe"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入营业执照" lay-reqText="请输入营业执照"  value="{{d.params.data.licensePhoe || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="remark" class="layui-form-label  layui-form-required">描述</label>
+            <div class="layui-input-block">
+                <input name="remark"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入描述" lay-reqText="请输入描述"  value="{{d.params.data.remark || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="deleted" class="layui-form-label  layui-form-required">是否删除,0否,1是</label>
+            <div class="layui-input-block">
+                <input name="deleted"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入是否删除,0否,1是" lay-reqText="请输入是否删除,0否,1是"  value="{{d.params.data.deleted || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="createTime" class="layui-form-label  layui-form-required">创建时间</label>
+            <div class="layui-input-block">
+                <input name="createTime"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入创建时间" lay-reqText="请输入创建时间"  value="{{d.params.data.createTime || '' }}" />
+            </div>
+        </div>
+	    
+	    <div class="layui-form-item">
+            <label for="updateTime" class="layui-form-label  layui-form-required">更新时间</label>
+            <div class="layui-input-block">
+                <input name="updateTime"   lay-verType="tips" lay-verify="required" class="layui-input" placeholder="请输入更新时间" lay-reqText="请输入更新时间"  value="{{d.params.data.updateTime || '' }}" />
+            </div>
+        </div>
+	    
+        <div class="layui-form-item text-right core-hidden">
+            <input type="button" class="layui-btn" lay-submit lay-filter="LAY-app-BusinessStore-editForm-submit" id="LAY-app-BusinessStore-editForm-submit" value="确认编辑">
+        </div>
+    </div>
+</script>
+<script>
+    var debug= layui.setter.debug;
+    layui.data.sendParams = function (d) {
+        //开启调试情况下获取接口赋值数据
+        if (debug) { console.log(d.params.data); }
+        layui.use(['admin', 'form', 'laydate', 'upload', 'coreHelper', 'cropperImg'],
+        function () {
+            var $ = layui.$
+                , form = layui.form
+                , admin = layui.admin
+                , laydate = layui.laydate
+                , upload = layui.upload
+                , cropperImg = layui.cropperImg
+                , coreHelper = layui.coreHelper;
+        
+            form.verify({
+                
+            });
+            //重载form
+            form.render(null, 'LAY-app-BusinessStore-editForm');
+        })
+    };
+</script>
