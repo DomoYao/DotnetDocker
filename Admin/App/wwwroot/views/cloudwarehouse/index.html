@@ -11,7 +11,7 @@
     /* 重写样式 */
 </style>
 <script type="text/html" template lay-type="Post" lay-url="Api/CloudWarehouse/GetIndex" lay-done="layui.data.done(d);">
-    
+
 </script>
 <div class="table-body">
     <table  id="LAY-app-CloudWarehouse-tableBox" lay-filter="LAY-app-CloudWarehouse-tableBox"></table>
@@ -213,7 +213,7 @@
 
                                 $("select#" + thisId).empty().append(str);
                                 form.render("select");
-                            } 
+                            }
                         });
                     }
                 }
@@ -275,7 +275,7 @@
 						    { field: 'city', title: '市', sort: false,width: 105 },
 						    { field: 'county', title: '区县', sort: false,width: 105 },
 						    { field: 'address', title: '仓库地址', sort: false,width: 105 },
-						   
+
                             { width: 162, align: 'center', title:'操作', fixed: 'right', toolbar: '#LAY-app-CloudWarehouse-tableBox-bar' }
                         ]
                     ]
@@ -341,7 +341,7 @@
                                             form.on('submit(LAY-app-CloudWarehouse-createForm-submit)',
                                                 function(data) {
                                                     var field = data.field; //获取提交的字段
-                                                    
+
 
                                                     if (debug) { console.log(field); } //开启调试返回数据
                                                     //提交 Ajax 成功后，关闭当前弹层并重载表格
@@ -385,7 +385,7 @@
                                         form.on('submit(LAY-app-CloudWarehouse-editForm-submit)',
                                             function(data) {
                                                 var field = data.field; //获取提交的字段
-                                                
+
 
                                                 if (debug) { console.log(field); } //开启调试返回数据
                                                 //提交 Ajax 成功后，关闭当前弹层并重载表格
@@ -545,10 +545,10 @@
                         });
 			    }
 
-                
+
 
                 //监听 表格复选框操作
-                
+
 
                 //重载form
                 form.render();

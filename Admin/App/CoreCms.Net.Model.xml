@@ -10263,6 +10263,36 @@
                 随机用户数据(用于首页返回购买用户随机数据)
             </summary>
         </member>
+        <member name="T:CoreCms.Net.Model.ViewModels.DTO.SysDictDto">
+            <summary>
+            字典配置.
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysDictDto.dictCode">
+            <summary>
+            字典类型编号
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysDictDto.dictName">
+            <summary>
+            字典类型名称
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysDictDto.List">
+            <summary>
+            字典集合.
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysDictionaryDataDto.dictDataCode">
+            <summary>
+            字典项标识
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysDictionaryDataDto.dictDataName">
+            <summary>
+            字典项名称
+            </summary>
+        </member>
         <member name="P:CoreCms.Net.Model.ViewModels.DTO.SysMenuTreeDto.id">
             <summary>
                 菜单id
