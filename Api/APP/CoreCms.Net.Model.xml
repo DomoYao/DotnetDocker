@@ -8001,6 +8001,16 @@
             仓库种类
             </summary>
         </member>
+        <member name="P:CoreCms.Net.Model.FromBody.PortalSearch.page">
+            <summary>
+                当前页码
+            </summary>
+        </member>
+        <member name="P:CoreCms.Net.Model.FromBody.PortalSearch.pageSize">
+            <summary>
+                每页数据量
+            </summary>
+        </member>
         <member name="P:CoreCms.Net.Model.FromBody.WxAdvert.codes">
             <summary>
             广告位置

@@ -149,7 +149,7 @@
             <summary>
             仓库大佬注册
             </summary>
-            <returns></returns>
+            <returns>data:仓库注册id</returns>
         </member>
         <member name="M:CoreCms.Net.Web.WebApi.Controllers.BusinessController.CloudWarehouseGetEdit(CoreCms.Net.Model.FromBody.FMIntId)">
             <summary>
